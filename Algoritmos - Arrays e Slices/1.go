@@ -1,6 +1,13 @@
 package main
 
+import "fmt"
+
 func main() {
-	var numeros [3]int
+	numeros := [3]int{1, 2, 3}
+	soma := 0
+	for _, num := range numeros {
+		soma += num
+	}
+	fmt.Printf("Resultado da soma: %d\n", soma)
 
 }
